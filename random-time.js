@@ -7,11 +7,11 @@ function getRandomTime(min, max){
     max = max*3600;
 
     let random_number = getRandomNumber(min, max);
-    let hours = Math.floor(random_number/3600);
-    let minutes = Math.floor(random_number/60%60);
-    let seconds = Math.floor(random_number%60);
+    let hour = Math.floor(random_number/3600);
+    let minute = Math.floor(random_number/60%60);
+    let second = Math.floor(random_number%60);
 
-    return {hours, minutes, seconds}
+    return {hour, minute, second}
 };
 
 export { getRandomTime }
