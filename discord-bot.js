@@ -1,6 +1,6 @@
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import { getRealBe } from "./schedule-pop.js";
-import config from './config.json' assert { type: 'json' };
+import config from './config.json' with { type: 'json' };
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 

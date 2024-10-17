@@ -1,5 +1,5 @@
 import { getRandomTime } from './random-time.js';
-import config from './config.json' assert { type: 'json' };
+import config from './config.json' with { type: 'json' };
 import schedule from 'node-schedule';
 import { sendRealBeNotification } from './discord-bot.js';
 
