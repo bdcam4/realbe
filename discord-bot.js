@@ -9,7 +9,7 @@ client.once(Events.ClientReady, readyClient => {
 });
 
 function sendRealBeNotification(){
-    client.channels.cache.get(`${channelId}`).send(`<@&${roleId}> Yooo it's RealBe time !!!`);
+    client.channels.cache.get(config.channelId).send(`<@&${config.roleId}> Yooo it's RealBe time !!!`);
 };
 
 client.login(config.token);
