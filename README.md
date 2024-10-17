@@ -2,14 +2,19 @@
 
 A bot to ping users at random intervals each day on discord.
 
-**Usage:**
+## Install
 
-1. Call `node discord-bot.js` to start the bot.
+This project requires node v22.10 or later and recommends the use of [PM2](https://pm2.keymetrics.io/docs/usage/quick-start/) to manage processes.
 
-**Installation:**
+```
+$ git clone ${gitHubURL} && cd realbe && npm i
+```
 
-1. Clone the repo and npm install `git clone ${gitHubURL} && cd realbe && npm i`
-2. Create and configure `config.json` in the base directory
+## Usage
+
+1. Create and configure `config.json` in the base directory
+2. Call `pm2 discord-bot.js` and use `pm2 list` to view the process later
+
 
 **Example config:**
 
